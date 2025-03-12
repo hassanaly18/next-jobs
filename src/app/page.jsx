@@ -29,9 +29,9 @@ export default function Home() {
         <h1 className="text-2xl font-bold mb-4">
           Latest Next.js jobs are posted here!
         </h1>
-        <Link href="jobs/post">
+        <Link href="jobs">
           <button className="bg-blue-600 text-white px-4 py-4 rounded mb-4">
-            Post a Job
+            See all Jobs
           </button>
         </Link>
         <ul>
