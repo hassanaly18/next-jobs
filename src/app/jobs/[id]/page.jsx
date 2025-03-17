@@ -80,7 +80,7 @@ const JobDetails = () => {
         </button>
 
         {showform && (
-          <div className="mt-6 p-6 border rounded-lg bg-gray-900">
+          <div className="mt-6 p-6  rounded-lg bg-gray-900">
             <h2 className="text-xl font-semibold text-gray-200">
               Apply for this Job Now!
             </h2>
