@@ -2,7 +2,7 @@
 
 import { supabase } from "@/utils/supabase";
 import { useRouter } from "next/navigation";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 const Login = () => {
   const router = useRouter();
@@ -11,6 +11,12 @@ const Login = () => {
     password: "",
   });
   const [loading, setLoading] = useState(false);
+
+  // const [count, setCount] = useState(0);
+
+  // useEffect(()=>{
+  //   console.log("Count triggered")
+  // }, [count])
 
   const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
@@ -62,6 +68,20 @@ const Login = () => {
       >
         Login
       </button>
+
+      {/* <div className="mt-6">
+        <h1>Count: {count}</h1>
+        <button
+          onClick={() => setCount(count + 5)}
+        >
+          Add 5
+        </button>
+
+        <br />
+        <button onClick={()=> setCount(count - 3)}>
+          Subtract 3
+        </button>
+      </div> */}
     </div>
   );
 };
